@@ -10,4 +10,4 @@ The ESP8266 reads the time and temperature from the DS3231 (and optionally does 
 Rinse and repeat.
 
 ### Update
-Brian Robbins (https://github.com/bprobbins) Has very kindly provided a schematic and what looks like a readily available, modern P-MOSFET type for the actual power-switching circuit (it would probably only have taken me about another 8 or 9 years to around to it).  Check under the "Issues" menu above and scroll down to the -second- schematic.  Thanks, Brian!
+Brian Robbins (https://github.com/bprobbins) Has very kindly provided a schematic and what looks like a readily available, modern P-MOSFET type for the actual power-switching circuit (it would probably only have taken me about another 8 or 9 years to get around to it).  Check under the "Issues" menu above and scroll down to the -second- schematic.  Thanks, Brian!
