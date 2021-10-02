@@ -1,5 +1,5 @@
 # ESP8266-DS3231
-### Using a DS3231 to supply power to an ESP8266 ("no-power" deep sleep)
+### Using a DS3231 to control power to an ESP8266 ("no-power" deep sleep)
 
 Uses the interrupt (alarm) from a DS3231 RTC chip to turn on a P-channel MOSFET, which supplies power to the ESP8266.
 
