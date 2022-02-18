@@ -21,7 +21,7 @@ The pads labelled ENAB1/ENAB2 on the bottom left are the connections from the DS
 
 #### The DS3231 Module
 
-![The modified DS3231 Module](https://pucebaboon.com/images/DS3231.jpg)
+![The modified DS3231 Module](https://www.pucebaboon.com/images/DS3231-mod.jpg)
 
 As you can see from this image, pin-2 (VDD) of the DS3231 has been disconnected from the PCB, so the chip cannot get its positive supply voltage from the main project battery (whether the P-MOSFET switch is on or off) and therefore operates permanently on current supplied by the coin-cell battery. Other modifications include the removal of the current limiting resistor to permanently disable the power-on LED and the removal of the "charge" resistor to prevent any chance of the non-chargable CR2032 bursting.
 
