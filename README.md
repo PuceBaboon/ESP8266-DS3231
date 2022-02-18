@@ -19,6 +19,11 @@ The R1/R3 resistor pair were sized to prevent an excessively low gate voltage on
 
 The pads labelled ENAB1/ENAB2 on the bottom left are the connections from the DS3231, which switch the power to the ESP8266 "on" when the DS3231 timer expires and the -INT signal goes low.  The DS3231 doesn't require a positive supply from the ESP8266 side of the power switch, as it is modified to run -only- of the CR2032 button cell (see the photo of the DS3231, which has pin-2 removed).  If you want to use the 4kB AT24C32 EEPROM on the DS3231 board, you can supply a 3v3 line to the DS3231 module and it will work quite happily (note that when the ESP8266 shuts down, so does the AT24C32, but the DS3231 still ticks along on it's own coin-cell battery).
 
+#### The DS3231 Module
+
+![The modified DS3231 Module](https://pucebaboon.com/images/DS3231.jpg)
+
+As you can see from this image, pin-2 (VDD) of the DS3231 has been disconnected from the PCB, so the chip cannot get its positive supply voltage from the main project battery (whether the P-MOSFET switch is on or off) and therefore operates permanently on current supplied by the coin-cell battery. Other modifications include the removal of the current limiting resistor to permanently disable the power-on LED and the removal of the "charge" resistor to prevent any chance of the non-chargable CR2032 bursting.
 
 #### Software Notes
 
