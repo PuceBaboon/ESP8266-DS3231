@@ -3,7 +3,7 @@
 
 Uses the interrupt (alarm) from a DS3231 RTC chip to turn on a P-channel MOSFET, which supplies power to the ESP8266.
 
-The ESP8266 reads the time and temperature from the DS3231 (and optionally does something useful with it), calculates the timing of the next wake-up call and loads it back to the DS3231 register, causing the DS3231 to turn off the power and send everything back into no-power sleep mode.  The DS3231 at this point is sipping power from it's own button-cell back-up battery.
+The ESP8266 reads the time and temperature from the DS3231 (and optionally does something useful with it), calculates the timing of the next wake-up call and loads it back to the DS3231 register, causing the DS3231 to turn off the power and send everything back into no-power sleep mode.  The DS3231 at this point is sipping power from it's own coin-cell back-up battery.
 
 Rinse and repeat.
 
@@ -23,7 +23,7 @@ The pads labelled ENAB1/ENAB2 on the bottom left are the connections from the DS
 
 ![The modified DS3231 Module](https://www.pucebaboon.com/images/DS3231-mod.jpg)
 
-As you can see from this image, pin-2 (VDD) of the DS3231 has been disconnected from the PCB, so the chip cannot get its positive supply voltage from the main project battery (whether the P-MOSFET switch is on or off) and therefore operates permanently on current supplied by the coin-cell battery. Other modifications include the removal of the current limiting resistor to permanently disable the power-on LED and the removal of the "charge" resistor to prevent any chance of the non-chargable CR2032 bursting.
+As you can see from this image, pin-2 (VCC) of the DS3231 has been disconnected from the PCB and connected to ground, so the chip cannot get its positive supply voltage from the main project battery (whether the P-MOSFET switch is on or off) and therefore operates permanently on current supplied by the coin-cell battery. Other modifications include the removal of the current limiting resistor to permanently disable the power-on LED and the removal of the "charge" resistor to prevent any chance of the non-chargable CR2032 bursting. This particular module also has a ceramic capacitor across the battery, which can retain time settings while the battery is changed.
 
 #### Software Notes
 
