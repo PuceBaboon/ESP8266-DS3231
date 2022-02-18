@@ -30,5 +30,5 @@ The pads labelled ENAB1/ENAB2 on the bottom left are the connections from the DS
 
 A few years back, Brian Robbins (https://github.com/bprobbins) very kindly provided a schematic and what looks like a readily available, modern P-MOSFET type for the actual power-switching circuit (it would probably only have taken me about another 8 or 9 years to get around to it).  Check under the "Issues" menu above and scroll down to the -second- schematic.  Thanks, Brian!   a
   --  ...and yes, it did take me years, but Brian's (great!) schematic has now been replaced with one to make it a little clearer where the physical connections fit together.  There's also an early (but working) version of the PCB for this circuit available from OSH Park's shared-projects area 
-![OSH Park](<a href="https://oshpark.com/shared_projects/iFWjTLa5")
+![OSH Park](https://oshpark.com/shared_projects/iFWjTLa5)
 This is a mainly through-hole component board, with the single exception of the P-channel MOSFET, which is a surface-mount (but not too difficult to solder with a normal iron).  Sometime in the next 10 or so years, I might get around to updating this board to a more useful form-factor.
