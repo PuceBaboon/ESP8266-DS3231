@@ -26,7 +26,10 @@ The pads labelled ENAB1/ENAB2 on the bottom left are the connections from the DS
  The other (parallel) projects using this hardware are now using the Adafruit RTClib library.  This project will be updated to reflect that in the very near future [written Feb 2022].
 
 
-### Updates
+### Credits
 
 A few years back, Brian Robbins (https://github.com/bprobbins) very kindly provided a schematic and what looks like a readily available, modern P-MOSFET type for the actual power-switching circuit (it would probably only have taken me about another 8 or 9 years to get around to it).  Check under the "Issues" menu above and scroll down to the -second- schematic.  Thanks, Brian!   a
-  --  ...and yes, it did take me years, but Brian's (great!) schematic has now been replaced with one to make it a little clearer where the physical connections fit together.  There's also an early (but working) version of the PCB for this circuit available from [OSH Park's shared-projects](https://oshpark.com/shared_projects/iFWjTLa5) area.  This is a mainly through-hole component board, with the single exception of the P-channel MOSFET, which is a surface-mount (but not too difficult to solder with a normal iron).  Sometime in the next 10 or so years, I might get around to updating this board to a more useful form-factor.
+  --  ...and yes, it did take me years, but Brian's (great!) schematic has now been supplemented with one to make it a little clearer where the physical connections fit together.  There's also an early (but working) version of the PCB for this circuit available from [OSH Park's shared-projects](https://oshpark.com/shared_projects/iFWjTLa5) area.  This is a mainly through-hole component board, with the single exception of the P-channel MOSFET, which is a surface-mount (but not too difficult to solder with a normal iron).  Sometime in the next 10 or so years, I might get around to updating this board to a more useful form-factor.
+  
+More recently, Moritz Mueller [Meins321] went to the trouble of forking the repository and sending a pull request, for which I thank him very much.  Unfortunately, the patch was actually for the Rodan DS3231 library, not for the code here.  However, Moritz did prompt me (through guilt) to finally upload the schematic for the switch and update this README.  Thanks Moritz!
+
