@@ -25,6 +25,8 @@ The pads labelled ENAB1/ENAB2 on the bottom left are the connections from the DS
 
 As you can see from this image, pin-2 (VCC) of the DS3231 has been disconnected from the PCB and connected to ground, so the chip cannot get its positive supply voltage from the main project battery (whether the P-MOSFET switch is on or off) and therefore operates permanently on current supplied by the coin-cell battery. Other modifications include the removal of the current limiting resistor to permanently disable the power-on LED and the removal of the "charge" resistor to prevent any chance of the non-chargable CR2032 bursting. This particular module also has a ceramic capacitor across the battery, which can retain time settings while the battery is changed.
 
+For tons of useful information on these DS3231 modules and specifically on these modifications for low power operation, see [Ed Mallon's "Cave Pearl Project"](https://thecavepearlproject.org/2014/05/21/using-a-cheap-3-ds3231-rtc-at24c32-eeprom-from-ebay/).
+
 #### Software Notes
 
  (Currently) Requires:- https://github.com/rodan/ds3231
