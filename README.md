@@ -17,7 +17,7 @@ The 2N7000 N-channel MOSFET is there to protect the ESP8266 (a 3v3 device) again
 
 The R1/R3 resistor pair were sized to prevent an excessively low gate voltage on the AO3415 P-MOSFET.  You might need to change these values if you replace that device with some other type.
 
-The pads labelled ENAB1/ENAB2 on the bottom left are the connections from the DS3231, which switch the power to the ESP8266 "on" when the DS3231 timer expires and the -INT signal goes low.  The DS3231 doesn't require a positive supply from the ESP8266 side of the power switch, as it is modified to run *only* from the attached CR2032 coin-cell battery (see the photo of the DS3231 below, which has pin-2 VCC cut and wired to ground).  If you want to use the 4kB AT24C32 EEPROM on the DS3231 board, you can supply a 3v3 line to the DS3231 module and it will work quite happily (note that when the ESP8266 shuts down, so does the AT24C32, but the DS3231 still ticks along on it's own coin-cell battery).
+The pads labelled ENAB1/ENAB2 on the bottom left are the connections from the DS3231, which switch the power to the ESP8266 "on" when the DS3231 timer expires and the -INT signal goes low.  The DS3231 doesn't require a positive supply from the ESP8266 side of the power switch, as it is modified to run *only* from the attached CR2032 coin-cell battery (see the photo of the DS3231 below, which has pin-2 VCC cut and wired to ground).  If you want to use the 4kB AT24C32 EEPROM on the DS3231 board, you can connect the 3v3 line to the DS3231 module and it will work quite happily (note that when the ESP8266 shuts down, so does the AT24C32, which is normally what you want ...but the DS3231 still ticks along quite happily on it's own coin-cell battery).
 
 #### The DS3231 Module
 
