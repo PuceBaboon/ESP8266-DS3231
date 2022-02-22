@@ -40,6 +40,8 @@ A few years back, Brian Robbins (https://github.com/bprobbins) very kindly provi
 ...and yes, it did take me years, but Brian's (great!) schematic has now been supplemented with one to make it a little clearer where the physical connections fit together.  There's also an early (but working) version of the PCB for this circuit available from [OSH Park's shared-projects](https://oshpark.com/shared_projects/iFWjTLa5) area.  This is a mainly through-hole component board, with the single exception of the P-channel MOSFET, which is a surface-mount (but not too difficult to solder with a normal iron). Sometime in the next 10 or so years, I might get around to updating this board to a more useful form-factor (the prototype was sized to fit into the space along the top of the battery compartment in a dollar-store LED light, to make the very useful one-button remote control mentioned above). 
 
 <img src="https://www.pucebaboon.com/images/One-Button-Remote_thumb.jpg" width="150">
+<a href="https://www.pucebaboon.com/images/One-Button-Remote_thumb.jpg" width="150"  align="right" target="_blank">
+<img src="https://www.pucebaboon.com/images/One-Button-Remote.jpg" style="max-width:100%;" alt="One-button WiFi remote control"></a>
 
 
   
