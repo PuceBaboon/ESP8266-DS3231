@@ -28,9 +28,9 @@ As you can see from this image, pin-2 (VCC) of the DS3231 has been disconnected 
 For tons of useful information on these DS3231 modules and specifically on these modifications for low power operation, see [Ed Mallon's "Cave Pearl Project"](https://thecavepearlproject.org/2014/05/21/using-a-cheap-3-ds3231-rtc-at24c32-eeprom-from-ebay/).
 
 #### Software Notes
-
- (Currently) Requires:- https://github.com/rodan/ds3231
- The other (parallel) projects using this hardware are now using the Adafruit RTClib library.  This project will be updated to reflect that in the very near future [written Feb 2022].
+(Currently) Requires:- https://github.com/rodan/ds3231
+ 
+Note that other (parallel) projects using this hardware are now using the Adafruit RTClib library and this project will be updated to reflect that in the very near future [written Feb 2022].
 
 
 ### Credits
